@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo - Carpintería Miguel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_catalogo.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html">LOGO</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+    </div>
+    <section class="catalog">
+        <h1>Nuestro Catálogo</h1>
+        <div class="catalog-container">
+            <!-- Productos -->
+            <div class="product" id="product1">
+                <img src="mesaderoble.webp" alt="Mesa de Roble">
+                <h2>Mesa de Roble</h2>
+                <p>$150.00</p>
+                <button onclick="addToCart('Mesa de Roble', 150, 'mesaderoble.webp')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="sillapino.webp" alt="Silla de Pino">
+                <h2>Silla de Pino</h2>
+                <p>$75.00</p>
+                <button onclick="addToCart('Silla de Pino', 75, 'sillapino.webp')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product3">
+                <img src="sillart.webp" alt="Silla de Madera Con Brazos">
+                <h2>Silla de Madera Con Brazos</h2>
+                <p>$85.00</p>
+                <button onclick="addToCart('Silla de Madera Con Brazos', 85, 'sillart.webp')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product4">
+                <img src="armarrr.avif" alt="Armario de Cedro">
+                <h2>Armario de Cedro</h2>
+                <p>$300.00</p>
+                <button onclick="addToCart('Armario de Cedro', 300, 'armarrr.avif')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product5">
+                <img src="MESA DE PINO.webp" alt="Mesa de Pino">
+                <h2>Mesa de Pino</h2>
+                <p>$200.00</p>
+                <button onclick="addToCart('Mesa de Pino', 200, 'MESA DE PINO.webp')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product6">
+                <img src="SILLAMETAL.webp" alt="Silla de Metal">
+                <h2>Silla de Metal</h2>
+                <p>$100.00</p>
+                <button onclick="addToCart('Silla de Metal', 100, 'SILLAMETAL.webp')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product7">
+                <img src="sofadecuero.webp" alt="Sofá de Cuero">
+                <h2>Sofá de Cuero</h2>
+                <p>$500.00</p>
+                <button onclick="addToCart('Sofá de Cuero', 500, 'sofadecuero.webp')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product8">
+                <img src="comodadecedro.webp" alt="Cómoda de Cedro">
+                <h2> Cómoda de Cedro</h2>
+                <p>$250.00</p>
+                <button onclick="addToCart('Cómoda de Cedro', 250, 'comodadecedro.webp')">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product9">
+                <img src="escritorio.png" alt="Escritorio Robusto">
+                <h2>Escritorio Robusto</h2>
+                <p>$400.00</p>
+                <button onclick="addToCart('Escritorio Robusto', 400, 'escritorio.png')">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    <section class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button class="finalizar" onclick="checkout()">Finalizar Compra</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
